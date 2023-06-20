@@ -1,3 +1,8 @@
+/*!
+* Start Bootstrap - undefined v1.0.0 (undefined)
+* Copyright 2013-2023 
+* Licensed under ISC (https://github.com/StartBootstrap/sunflower-studios-v2/blob/master/LICENSE)
+*/
 body {
   margin: 0;
   padding: 0;
@@ -144,7 +149,7 @@ h1,
 }
 @media (min-width: 992px) {
   h1,
-.h1 {
+  .h1 {
     font-size: 52px;
     line-height: 58px;
   }
@@ -159,7 +164,7 @@ h2,
 }
 @media (min-width: 768px) {
   h2,
-.h2 {
+  .h2 {
     font-size: 42px;
     line-height: 60px;
     margin-bottom: 16px;
@@ -167,7 +172,7 @@ h2,
 }
 @media (min-width: 992px) {
   h2,
-.h2 {
+  .h2 {
     font-size: 52px;
     line-height: 60px;
     margin-bottom: 22px;
@@ -175,7 +180,7 @@ h2,
 }
 @media (min-width: 992px) {
   .content h2,
-.content .h2 {
+  .content .h2 {
     font-size: 42px;
     line-height: 46px;
   }
@@ -190,14 +195,14 @@ h3,
 }
 @media (min-width: 992px) {
   h3,
-.h3 {
+  .h3 {
     font-size: 22px;
     line-height: 29px;
   }
 }
 @media (min-width: 1201px) {
   h3,
-.h3 {
+  .h3 {
     font-size: 26px;
     line-height: 34px;
     margin-bottom: 11px;
@@ -205,7 +210,7 @@ h3,
 }
 @media (min-width: 992px) {
   .content h3,
-.content .h3 {
+  .content .h3 {
     font-size: 22px;
     line-height: 29px;
   }
@@ -265,7 +270,7 @@ h3,
 }
 @media (min-width: 992px) {
   .swiper-container .swiper-button-next::after,
-.swiper-container .swiper-button-prev::after {
+  .swiper-container .swiper-button-prev::after {
     font-size: 15px;
   }
 }
@@ -275,7 +280,7 @@ h3,
 }
 @media (min-width: 992px) {
   .swiper-container .swiper-button-next,
-.swiper-container .swiper-button-prev {
+  .swiper-container .swiper-button-prev {
     width: 70px;
     height: 70px;
   }
@@ -412,7 +417,7 @@ h3,
   height: 25px;
   flex-shrink: 0;
   margin-right: 13px;
-  background-image: url(../img/blockquote.svg);
+  background-image: url(@img/blockquote.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -465,8 +470,10 @@ h3,
 .blockquote-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .figure-img {
@@ -562,7 +569,7 @@ a.link-demo--visited {
   left: 0;
   width: 23px;
   height: 23px;
-  background-image: url(../img/search.svg);
+  background-image: url(@img/search.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -628,12 +635,21 @@ a.link-demo--visited {
 .search-form__input::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
+.search-form__input::-moz-placeholder {
+  color: #fcfcfc;
+  font-size: 14px;
+  line-height: 17px;
+}
 .search-form__input::placeholder {
   color: #fcfcfc;
   font-size: 14px;
   line-height: 17px;
 }
 @media (max-width: 992px) {
+  .search-form__input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 22px;
+  }
   .search-form__input::placeholder {
     font-size: 16px;
     line-height: 22px;
@@ -719,7 +735,8 @@ a.link-demo--visited {
 .header__brand img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .header__search {
   display: none;
@@ -739,7 +756,7 @@ a.link-demo--visited {
 .header__search-open {
   width: 23px;
   height: 23px;
-  background-image: url(../img/search.svg);
+  background-image: url(@img/search.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -769,6 +786,11 @@ a.link-demo--visited {
   line-height: 29px;
   color: #fcfcfc;
 }
+.header__search-input::-moz-placeholder {
+  font-size: 22px;
+  line-height: 29px;
+  color: #fcfcfc;
+}
 .header__search-input::placeholder {
   font-size: 22px;
   line-height: 29px;
@@ -780,7 +802,7 @@ a.link-demo--visited {
   left: 20px;
   width: 23px;
   height: 23px;
-  background-image: url(../img/search.svg);
+  background-image: url(@img/search.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -795,7 +817,7 @@ a.link-demo--visited {
   right: 21px;
   width: 18px;
   height: 18px;
-  background-image: url(../img/search-close.svg);
+  background-image: url(@img/search-close.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -931,10 +953,10 @@ a.link-demo--visited {
   background-size: 100%;
 }
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
-  background-image: url(../img/menu-close.svg);
+  background-image: url(@img/menu-close.svg);
 }
 .navbar-toggler[aria-expanded=false] .navbar-toggler-icon {
-  background-image: url(../img/menu-open.svg);
+  background-image: url(@img/menu-open.svg);
 }
 @media (min-width: 992px) {
   .navbar-toggler {
@@ -1015,6 +1037,11 @@ a.link-demo--visited {
   line-height: 22px;
   color: #fcfcfc;
 }
+.navbar__search-input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fcfcfc;
+}
 .navbar__search-input::placeholder {
   font-size: 16px;
   line-height: 22px;
@@ -1026,7 +1053,7 @@ a.link-demo--visited {
   right: 14px;
   width: 19px;
   height: 19px;
-  background-image: url(../img/search.svg);
+  background-image: url(@img/search.svg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1038,7 +1065,8 @@ a.link-demo--visited {
 .navbar .navbar-nav {
   margin-top: 0;
   margin-bottom: 0;
-  margin-inline-end: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
   flex-wrap: wrap;
 }
 @media (max-width: 992px) {
@@ -1212,7 +1240,7 @@ a.link-demo--visited {
   height: 60px;
   opacity: 0;
   background-color: transparent;
-  background-image: url(../img/scroll.svg);
+  background-image: url(@img/scroll.svg);
   border: 1px solid #8e7ee4;
   border-radius: 50%;
   background-repeat: no-repeat;
@@ -1272,8 +1300,10 @@ a.link-demo--visited {
 .section-hero__back img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
 }
 @media (min-width: 768px) {
   .section-hero__back {
@@ -1333,8 +1363,10 @@ a.link-demo--visited {
 .section-hero__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .section-hero__content {
   max-width: 400px;
@@ -1580,7 +1612,7 @@ a.link-demo--visited {
   right: 0;
   width: 95%;
   height: 270px;
-  background-image: url(../img/section-perks.svg);
+  background-image: url(@img/section-perks.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
@@ -1691,7 +1723,7 @@ a.link-demo--visited {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: url(../img/section-begin-back.svg);
+  background-image: url(@img/section-begin-back.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
@@ -1831,7 +1863,8 @@ a.link-demo--visited {
 .section-partners__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section-partners .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 30px;
@@ -1843,7 +1876,7 @@ a.link-demo--visited {
 }
 
 .section-numbers {
-  background-image: url(../img/section-numbers-back-2.svg);
+  background-image: url(@img/section-numbers-back-2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1852,7 +1885,7 @@ a.link-demo--visited {
 }
 @media (min-width: 768px) {
   .section-numbers {
-    background-image: url(../img/section-numbers-back.svg);
+    background-image: url(@img/section-numbers-back.svg);
     background-size: cover;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -2127,7 +2160,8 @@ a.link-demo--visited {
 .section-icon-list__item-icon img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section-icon-list__item-title {
   color: #fcfcfc;
@@ -2205,8 +2239,10 @@ a.link-demo--visited {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   z-index: 1;
 }
 .section-journey__image-wrapper {
@@ -2237,8 +2273,10 @@ a.link-demo--visited {
 .section-journey__image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .section-journey__text {
   margin-bottom: 32px;
@@ -2259,7 +2297,7 @@ a.link-demo--visited {
 
 .section-squares {
   background-color: #221857;
-  background-image: url(../img/section-squares-back-2.svg);
+  background-image: url(@img/section-squares-back-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2270,7 +2308,7 @@ a.link-demo--visited {
 @media (min-width: 768px) {
   .section-squares {
     padding-top: 140px;
-    background-image: url(../img/section-squares-back.svg);
+    background-image: url(@img/section-squares-back.svg);
     padding-bottom: 90px;
   }
 }
@@ -2285,7 +2323,7 @@ a.link-demo--visited {
   width: 90%;
   height: 102px;
   position: absolute;
-  background-image: url(../img/section-squares-2.svg);
+  background-image: url(@img/section-squares-2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2297,7 +2335,7 @@ a.link-demo--visited {
   .section-squares::before {
     width: 360px;
     height: 420px;
-    background-image: url(../img/section-squares.svg);
+    background-image: url(@img/section-squares.svg);
     bottom: unset;
   }
 }
@@ -2545,7 +2583,7 @@ a.link-demo--visited {
   display: block;
   width: 325px;
   height: 222px;
-  background-image: url(../img/section-testimonials-back.svg);
+  background-image: url(@img/section-testimonials-back.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
@@ -2625,8 +2663,10 @@ a.link-demo--visited {
 .section-testimonials__item-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media (min-width: 992px) {
   .section-testimonials__item-image {
@@ -2668,7 +2708,7 @@ a.link-demo--visited {
 }
 @media (min-width: 768px) {
   .section-testimonials .swiper-button-next,
-.section-testimonials .swiper-button-prev {
+  .section-testimonials .swiper-button-prev {
     top: 136px;
   }
 }
@@ -2729,8 +2769,10 @@ a.link-demo--visited {
 .section-about__image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center bottom;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 
 .section-squares-v2 {
@@ -2756,7 +2798,7 @@ a.link-demo--visited {
   background-color: #221857;
   width: 100%;
   height: 100%;
-  background-image: url(../img/section-squares-back-3.svg);
+  background-image: url(@img/section-squares-back-3.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2784,7 +2826,7 @@ a.link-demo--visited {
   display: block;
   width: 90%;
   height: 102px;
-  background-image: url(../img/section-squares-2.svg);
+  background-image: url(@img/section-squares-2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2797,7 +2839,7 @@ a.link-demo--visited {
   .section-squares-v2__wrapper::before {
     width: 290px;
     height: 375px;
-    background-image: url(../img/section-squares-3.svg);
+    background-image: url(@img/section-squares-3.svg);
     bottom: unset;
     top: 40px;
   }
@@ -2885,8 +2927,10 @@ a.link-demo--visited {
 .section-image-text__image-wrapper img {
   width: 90%;
   height: 90%;
-  object-fit: contain;
-  object-position: center bottom;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .section-image-text__image-wrapper--1 {
   background-color: #89e3db;
@@ -2921,7 +2965,7 @@ a.link-demo--visited {
   right: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/section-faq-back-1.svg);
+  background-image: url(@img/section-faq-back-1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -2939,7 +2983,7 @@ a.link-demo--visited {
   padding-bottom: 50px;
 }
 .section-faq--light::before {
-  background-image: url(../img/section-faq-back-2.svg);
+  background-image: url(@img/section-faq-back-2.svg);
 }
 @media (min-width: 768px) {
   .section-faq--light {
@@ -3069,10 +3113,10 @@ a.link-demo--visited {
 }
 .section-gallery--dark {
   background-color: #6b58cd;
-  background-image: url(../img/section-gallery-back.svg);
+  background-image: url(@img/section-gallery-back.svg);
 }
 .section-gallery--light {
-  background-image: url(../img/section-gallery-back-2.svg);
+  background-image: url(@img/section-gallery-back-2.svg);
   padding-top: 50px;
 }
 @media (min-width: 768px) {
@@ -3150,9 +3194,11 @@ a.link-demo--visited {
 .section-gallery__item-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   transition: all 200ms ease-in-out;
-  object-position: center bottom;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .section-gallery__item-name {
   font-weight: 700;
@@ -3252,8 +3298,10 @@ a.link-demo--visited {
 .section-blog__item-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transition: all 300ms ease-in-out;
 }
 .section-blog__item-title {
@@ -3295,7 +3343,7 @@ a.link-demo--visited {
   align-items: center;
   justify-content: center;
   background-color: #89e3db;
-  background-image: url(../img/section-banner-back.svg);
+  background-image: url(@img/section-banner-back.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -3389,8 +3437,10 @@ a.link-demo--visited {
 .blog-post__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .page-404 {
@@ -3406,7 +3456,7 @@ a.link-demo--visited {
   top: 0;
   width: 602px;
   height: 100%;
-  background-image: url(../img/section-404-1.svg);
+  background-image: url(@img/section-404-1.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
@@ -3426,7 +3476,7 @@ a.link-demo--visited {
   bottom: 0;
   width: 220px;
   height: 300px;
-  background-image: url(../img/section-404-2.svg);
+  background-image: url(@img/section-404-2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

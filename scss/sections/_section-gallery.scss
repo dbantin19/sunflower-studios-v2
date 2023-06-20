@@ -13,11 +13,11 @@
 
 	&--dark {
 		background-color: $background;
-		background-image: url(@img/section-gallery-back.svg);
+		background-image: url(../img/section-gallery-back.svg);
 	}
 
 	&--light {
-		background-image: url(@img/section-gallery-back-2.svg);
+		background-image: url(../img/section-gallery-back-2.svg);
 		padding-top: 50px;
 
 		@media (min-width: $md) {

@@ -13,7 +13,7 @@
 		right: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url(@img/section-faq-back-1.svg);
+		background-image: url(../img/section-faq-back-1.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center top;
@@ -31,7 +31,7 @@
 		padding-bottom: 50px;
 
 		&::before {
-			background-image: url(@img/section-faq-back-2.svg);
+			background-image: url(../img/section-faq-back-2.svg);
 		}
 
 		@media (min-width: $md) {

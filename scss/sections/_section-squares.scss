@@ -1,6 +1,6 @@
 .section-squares {
 	background-color: $primary;
-	background-image: url(@img/section-squares-back-2.svg);
+	background-image: url(../img/section-squares-back-2.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -10,7 +10,7 @@
 
 	@media (min-width: $md) {
 		padding-top: 140px;
-		background-image: url(@img/section-squares-back.svg);
+		background-image: url(../img/section-squares-back.svg);
 		padding-bottom: 90px;
 	}
 
@@ -24,7 +24,7 @@
 		width: 90%;
 		height: 102px;
 		position: absolute;
-		background-image: url(@img/section-squares-2.svg);
+		background-image: url(../img/section-squares-2.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
@@ -35,7 +35,7 @@
 		@media (min-width: $md) {
 			width: 360px;
 			height: 420px;
-			background-image: url(@img/section-squares.svg);
+			background-image: url(../img/section-squares.svg);
 			bottom: unset;
 		}
 

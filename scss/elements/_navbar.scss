@@ -33,13 +33,13 @@
 
 		&[aria-expanded="true"] {
 			.navbar-toggler-icon {
-				background-image: url(@img/menu-close.svg);
+				background-image: url(../img/menu-close.svg);
 			}
 		}
 
 		&[aria-expanded="false"] {
 			.navbar-toggler-icon {
-				background-image: url(@img/menu-open.svg);
+				background-image: url(../img/menu-open.svg);
 			}
 		}
 
@@ -140,7 +140,7 @@
 			right: 14px;
 			width: 19px;
 			height: 19px;
-			background-image: url(@img/search.svg);
+			background-image: url(../img/search.svg);
 			background-size: 100%;
 			background-position: center;
 			background-repeat: no-repeat;

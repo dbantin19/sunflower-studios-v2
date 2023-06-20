@@ -1,0 +1,102 @@
+.blog-pagination {
+	margin-bottom: 60px;
+
+	@media (min-width: $md) {
+		margin-bottom: 140px;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__list {
+		margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__item {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background: $primary;
+		margin-left: 5px;
+		margin-right: 5px;
+		overflow: hidden;
+
+		@media (min-width: $md) {
+			width: 45px;
+			height: 45px;
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $background;
+
+			a {
+				color: $white;
+			}
+		}
+
+		a {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 16px;
+			line-height: 22px;
+			color: $white;
+
+			@media (min-width: $md) {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+
+		&--active {
+			background-color: $accent;
+
+			&:hover,
+			&:focus {
+				a {
+					color: $black;
+				}
+			}
+
+			a {
+				color: $black;
+			}
+		}
+
+		&--prev,
+		&--next {
+			&:hover,
+			&:focus {
+				a {
+					background-color: $accent;
+					color: $primary;
+				}
+			}
+		}
+
+		&--prev {
+			margin-right: 15px;
+
+			@media (min-width: $md) {
+				margin-right: 22px;
+			}
+		}
+
+		&--next {
+			margin-left: 15px;
+
+			@media (min-width: $md) {
+				margin-left: 22px;
+			}
+		}
+	}
+}
